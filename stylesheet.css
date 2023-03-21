@@ -1,0 +1,74 @@
+:root {
+    --palette_1: #A2602C;
+    --palette_2: #C37E3F;
+    --palette_3: #D5A15F;
+    --palette_4: #BE8457;
+    --palette_5: #AE7951;
+}
+
+body {
+    background-color: var(--palette_4);
+}
+
+
+
+div.character-selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1#character-card {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+div.character-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #D5A15F;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+div.character-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+/* misc */
+
+.uB {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+}
+
+.uL {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+
+/* webkit */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--palette_1);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--palette_3);
+}

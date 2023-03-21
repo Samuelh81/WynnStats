@@ -24,6 +24,7 @@ async function updateData() {
     var ranking = playerData.ranking;
     var username = playerData.username;
     var uuid = playerData.uuid;  
+    console.log(characters);
 
     // Misc Variables
     var characterCount = 0
@@ -38,10 +39,12 @@ async function updateData() {
 
 
     // Update HTML
-    document.getElementById("playerName").innerHTML = playerName;
-    document.getElementById("rank").innerHTML = rank;
-
+    document.getElementById("character-card").innerHTML =  playerName + "'s Characters";
+    document.getElementById("class1-class").innerHTML = characters["3d831fcc-b3ef-4114-a0ed-8497aa02283c"].type;
+    document.getElementById("class1-total").innerHTML = 'total: ' + characters["3d831fcc-b3ef-4114-a0ed-8497aa02283c"].level; 
+    document.getElementById("class1-level").innerHTML = 'combat: ' + characters["3d831fcc-b3ef-4114-a0ed-8497aa02283c"].professions.combat.level
 }
+
 updateData();
 
 function getApiLink(name) {
